@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Nunito', Arial, sans-serif;
-    background-color: #f97900 40%;
+    background-color: #f9f4ee;
     color: #222222;
 }
 
@@ -532,4 +532,161 @@ h4 {
     border: none;
     display: block;
     filter: saturate(1.1) contrast(1.05);
+}
+
+/* =========================================
+   RESPONSIVE TABLET Y CELULAR
+========================================= */
+
+@media screen and (max-width: 900px) {
+
+    /* HEADER */
+
+    .nombre-colegio {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .ciudad {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    /* MENÚ */
+
+    #menuPpal ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #menuPpal li {
+        display: block;
+    }
+
+    #menuPpal a {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    /* SECCIÓN 1 */
+
+    #seccion1 {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    #textoPpal,
+    #contVideo {
+        width: 100%;
+    }
+
+    #textoPpal h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .parraItalica {
+        font-size: 15px;
+    }
+
+    #videoPpal {
+        width: 100%;
+    }
+
+    /* CUADRO HONOR */
+
+    #felicitacion {
+        font-size: 18px;
+    }
+
+    .tarjeta-honor {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* TABLAS */
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    /* PROFES */
+
+    .profe-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-profe {
+        width: 85px;
+        height: 85px;
+    }
+
+    /* MAPA */
+
+    .mapa-contenedor {
+        height: 250px;
+    }
+}
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    #fondoCabeza {
+        padding: 25px 10px;
+    }
+
+    .nombre-colegio {
+        font-size: 24px;
+    }
+
+    #textoPpal h1,
+    #seccion2 h2,
+    #seccion3 h2 {
+        font-size: 24px;
+    }
+
+    .parraItalica {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #menuPpal a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    th,
+    td {
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .foto-profe {
+        width: 75px;
+        height: 75px;
+    }
 }
